@@ -1,3 +1,11 @@
+html, body {margin: 0; padding: 0; overflow-x:hidden;}
+.cover-container, .info-container, .projects-container {
+  min-width: 100vw;
+  max-width: fit-content;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
 .App {
   text-align: center;
 }

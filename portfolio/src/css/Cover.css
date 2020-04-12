@@ -1,0 +1,45 @@
+.cover-container {
+    background: linear-gradient(to bottom, #3a4288 30%, #4b4e6d 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cover-content {
+    /* display: inline-flex; */
+    margin: 0 auto;
+}
+.cover-photo {
+    display: inline-block;
+}
+
+.cover-text {
+    text-align: center;
+    display: inline-block;
+}
+.cover-text h1 {
+    position: relative;
+    padding: .2em .5em;
+    margin: 0;
+    font-size: 3em;
+}
+
+.text-intro {
+    background: black;
+    color: white;
+    left: -1em;
+}
+.text-me {
+    background: white;
+    color: black;
+    bottom: .2em;
+    left: 1em;
+}
+.profile {
+    height: 15em;
+    width: 15em;
+    border-radius: 20em;
+    position: relative;
+    border: 2px solid white;
+    display: inline-block;
+}
