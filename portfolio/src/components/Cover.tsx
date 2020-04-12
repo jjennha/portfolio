@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import profile from "https://i.imgur.com/K2zj5sk.png";
+import profile from "../images/profile.png";
 type Props = {
 
 }
@@ -10,7 +10,7 @@ export default class Cover extends Component<Props>{
     getProfile() {
         const backgroundStyles = {
             backgroundImage: `url(${
-                profile
+                "https://i.imgur.com/K2zj5sk.png"
                 })`,
             backgroundSize: '15rem'
         }
