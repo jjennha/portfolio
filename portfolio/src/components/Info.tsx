@@ -28,13 +28,6 @@ export default class Info extends Component<Props, State>{
     }
     componentDidMount() {
         console.log(skills);
-        // console.log(timeline);
-        // var arr = [];
-        // timeline.forEach(t => {
-        //     var obj = {
-
-        //     }
-        // })
         this.setState({
             frontend: skills.frontend,
             backend: skills.backend,
@@ -45,7 +38,8 @@ export default class Info extends Component<Props, State>{
     getLevelStyles(level: number, color: string) {
         const styles = {
             width: (100 * level / 5) + "%",
-            background: color
+            background: color,
+            overflow: 'hidden'
         }
         return styles;
 
@@ -56,7 +50,7 @@ export default class Info extends Component<Props, State>{
                 <h2 className="header">About</h2>
                 <Row>
                     <Col md={true} className="info-panel info-about">
-                        <Container className="about-section info-current">
+                        <div className="about-section info-current">
                             <h3>Recent</h3>
                             <div>
                                 <p>
@@ -64,8 +58,8 @@ export default class Info extends Component<Props, State>{
                                     What am I up to next? I will be heading to Seattle, Washington for my next role as a Software Engineer at Amazon!
                                 </p>
                             </div>
-                        </Container>
-                        <Container className="about-section info-dev">
+                        </div>
+                        <div className="about-section info-dev">
                             <h3>Interests & Skills</h3>
                             <p>
                                 I have primarily held roles in web application and mobile development with focuses in frontend development and cloud computing.
@@ -94,14 +88,14 @@ export default class Info extends Component<Props, State>{
                                     })}
                                 </Col>
                             </Row>
-                        </Container>
-                        <Container className="about-section info-more">
+                        </div>
+                        <div className="about-section info-more">
                             <h3>Links</h3>
-                        </Container>
+                        </div>
                     </Col>
                     <Col md={true} className="info-panel info-timeline">
 
-                        <Container id="timeline">
+                        <div id="timeline">
                             <h3>Updates</h3>
                             <p>Some exciting professional and personal milestones on my timeline.</p>
                             <ul id="drop">
@@ -117,7 +111,7 @@ export default class Info extends Component<Props, State>{
                                     )
                                 })}
                             </ul>
-                        </Container>
+                        </div>
                     </Col>
                 </Row>
             </Container>

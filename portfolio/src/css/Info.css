@@ -11,8 +11,6 @@
 }
 .info-panel {
     height: fit-content;
-    /* margin: 1em;
-    padding:1em; */
     font-size: .8em;
 }
 .info-about {
@@ -21,7 +19,7 @@
 .about-section {
     background: #1f2335a1;
     padding: .5em 1em;
-    margin: 1em;
+    margin: 1em 0;
 }
 .info-about h3 {
     border-bottom:2px solid white;
@@ -37,23 +35,24 @@
 }
 .skill-list li{
     margin: 0 0 1em 1em;
-    border-radius: .17rem;
+    border-radius: 1rem;
     font-size: .8em;
     color: white;
+    overflow: hidden;
     min-width: 150px !important;
 }
 .level-style {
     padding-left:.5em
 }
 .frontend {
-    /* background: #bd7878; */
-    border:2px solid #bd7878;;
+    border:1.7px solid #bd7878;
+    
 }
 .backend {
-    border:2px solid #76a3e4;
+    border:1.7px solid #76a3e4;
 }
 .misc {
-    border:2px solid #74a09c
+    border:1.7px solid #74a09c
 }
 .info-timeline {
     background: #1f2335a1;
@@ -97,7 +96,7 @@
 #timeline li .date {
     color: #ffc5af;
     font-weight: 300;
-    min-width: 15em;
+    min-width: 12em;
 }
 #timeline li:hover{
     visibility: visible;
