@@ -1,0 +1,52 @@
+.info-container {
+    background: linear-gradient(to bottom, #2b2f42 63%, #020204 95%);
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    padding: 2em;
+}
+.header {
+    text-align: center;
+    font-size: 2em;
+}
+.info-panel {
+    height: 100vh;
+    margin: 1em;
+    padding:1em;
+    font-size: .8em;
+}
+.info-about {
+    text-align: left;
+}
+.info-about h3 {
+    border-bottom:2px solid white;
+}
+.skill-list {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.skill-list li{
+    margin: 0 0 1em 1em;
+    border-radius: .17rem;
+    font-size: .8em;
+    color: white;
+    min-width: 150px !important;
+}
+.level-style {
+    padding-left:.5em
+}
+.frontend {
+    /* background: #bd7878; */
+    border:2px solid #bd7878;;
+}
+.backend {
+    border:2px solid #76a3e4;
+}
+.misc {
+    border:2px solid #74a09c
+}
+.info-timeline {
+    /* background: red; */
+}
