@@ -10,13 +10,18 @@
     font-size: 2em;
 }
 .info-panel {
-    height: 100vh;
+    height: fit-content;
     margin: 1em;
     padding:1em;
     font-size: .8em;
 }
 .info-about {
     text-align: left;
+}
+.about-section {
+    background: #1f2335a1;
+    padding: .5em 1em;
+    margin: 1em;
 }
 .info-about h3 {
     border-bottom:2px solid white;
@@ -48,5 +53,59 @@
     border:2px solid #74a09c
 }
 .info-timeline {
-    /* background: red; */
+    background: #1f2335a1;
+    padding: .5em 1em;
+    margin: 1em;
+}
+#timeline {
+    margin:0;
+    padding:0;
+}
+#drop {
+    text-align: left;
+    padding-left: 0;
+    max-height: 40em;
+    overflow-y: scroll;
+}
+#timeline li {
+    display: flex;
+    justify-content: flex-start;
+}
+#timeline li .event-desc {
+    display: flex;
+    flex-direction: column;
+}
+#timeline li .event-desc .details {
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: visibility 0s, opacity .7s, max-height 0.8s linear;
+}
+#timeline .details:before {
+    content: '';
+}
+#timeline .details a {
+    color: #dbad57;
+}
+#timeline ul li {
+    margin: 2em 0;
+    padding-left: 30px;
+}
+#timeline li .date {
+    color: #ffc5af;
+    font-weight: 300;
+    min-width: 200px;
+}
+#timeline li:hover{
+    visibility: visible;
+    background: rgba(0,0,0,.2);
+    max-height: 300px;
+    min-width: fit-content;
+    transition: visibility 0s, max-height 0.1s linear;
+}
+#timeline li:hover .details{
+    visibility: visible;
+    opacity: 1;
+    max-height: 300px;
+    transition: visibility 0s, opacity .5s, max-height 0.8s linear;
 }
