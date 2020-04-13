@@ -11,8 +11,8 @@
 }
 .info-panel {
     height: fit-content;
-    margin: 1em;
-    padding:1em;
+    /* margin: 1em;
+    padding:1em; */
     font-size: .8em;
 }
 .info-about {
@@ -25,6 +25,9 @@
 }
 .info-about h3 {
     border-bottom:2px solid white;
+}
+.skills {
+    margin:0
 }
 .skill-list {
     display: inline-block;
@@ -54,7 +57,7 @@
 }
 .info-timeline {
     background: #1f2335a1;
-    padding: .5em 1em;
+    padding: .5em 0;
     margin: 1em;
 }
 #timeline {
@@ -94,12 +97,12 @@
 #timeline li .date {
     color: #ffc5af;
     font-weight: 300;
-    min-width: 200px;
+    min-width: 15em;
 }
 #timeline li:hover{
     visibility: visible;
     background: rgba(0,0,0,.2);
-    max-height: 300px;
+    /* max-height: 5em; */
     min-width: fit-content;
     transition: visibility 0s, max-height 0.1s linear;
 }

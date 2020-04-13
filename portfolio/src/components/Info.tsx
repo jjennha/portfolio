@@ -71,29 +71,29 @@ export default class Info extends Component<Props, State>{
                                 I have primarily held roles in web application and mobile development with focuses in frontend development and cloud computing.
                                 My current favorite stack is React with an AWS Backend.
                             </p>
-                            <div className="skills">
-                                <ul className="skill-list">
+                            <Row className="skills">
+                                <Col className="skill-list">
                                     {this.state.frontend.map((s, i) => {
                                         return (
                                             <li className="frontend" key={i}><div className="level-style" style={this.getLevelStyles(s.level, "#bd7878")}>{s.name}</div></li>
                                         )
                                     })}
-                                </ul>
-                                <ul className="skill-list">
+                                </Col>
+                                <Col className="skill-list">
                                     {this.state.backend.map((s, i) => {
                                         return (
                                             <li className="backend" key={i}><div className="level-style" style={this.getLevelStyles(s.level, "#76a3e4")}>{s.name}</div></li>
                                         )
                                     })}
-                                </ul>
-                                <ul className="skill-list">
+                                </Col>
+                                <Col className="skill-list">
                                     {this.state.misc.map((s, i) => {
                                         return (
                                             <li className="misc" key={i}><div className="level-style" style={this.getLevelStyles(s.level, "#74a09c")}>{s.name}</div></li>
                                         )
                                     })}
-                                </ul>
-                            </div>
+                                </Col>
+                            </Row>
                         </Container>
                         <Container className="about-section info-more">
                             <h3>Links</h3>
