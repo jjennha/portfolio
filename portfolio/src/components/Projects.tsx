@@ -38,7 +38,7 @@ export default class Projects extends Component<Props, State>{
     render() {
         return (
             <Container fluid={true} className="projects-container">
-                <h2 className="header">Projects</h2>
+                <h2 className="header header-main">Projects</h2>
                 {
                     this.state.projects.map((p, i) => {
                         return (

@@ -30,7 +30,8 @@
     padding-bottom: .5em;
 }
 .project-description {
-    color: whitesmoke
+    color: whitesmoke;
+    font-size: 1.1em;
 }
 .project-img {
     display: flex;

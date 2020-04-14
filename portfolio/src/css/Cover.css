@@ -1,12 +1,12 @@
 .cover-container {
-    background: linear-gradient(to bottom, #3a4288 30%, #4b4e6d 100%);
+    background: #af5a62;
+    /* background: linear-gradient(to bottom, #3a4288 30%, #4b4e6d 100%); */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .cover-content {
-    /* display: inline-flex; */
     margin: 0 auto;
 }
 .cover-photo {
@@ -28,12 +28,14 @@
     background: black;
     color: white;
     left: -1em;
+    animation: slideIn1 2s;
 }
 .text-me {
     background: white;
     color: black;
     bottom: .2em;
     left: 1em;
+    animation: slideIn2 2s;
 }
 .profile {
     height: 15em;
@@ -42,4 +44,12 @@
     position: relative;
     border: 2px solid white;
     display: inline-block;
+}
+@keyframes slideIn1 {
+    100%  {left:-1;white-space: nowrap;}
+    0% {left:5em;white-space: nowrap;}
+}
+@keyframes slideIn2 {
+    100%  {left:1;white-space: nowrap;}
+    0% {left:5em;white-space: nowrap;}
 }

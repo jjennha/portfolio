@@ -12,9 +12,11 @@
     text-align: center;
     font-size: 2em;
 }
+.header-main {
+    font-size: 2.5em;
+}
 .info-panel {
-    /* height: fit-content; */
-    font-size: .8em;
+    font-size: 1em;
     border-radius: .3rem;
 }
 .info-about {
@@ -96,7 +98,7 @@
 }
 #timeline ul li {
     margin: 2em 0;
-    padding-left: 30px;
+    padding: 0 5%;
 }
 #timeline li .date {
     color: #ffc5af;
@@ -115,9 +117,6 @@
     opacity: 1;
     max-height: 300px;
     transition: visibility 0s, opacity .5s, max-height 0.8s linear;
-}
-#timeline li::selection {
-
 }
 .links-container {
     list-style-type: none;

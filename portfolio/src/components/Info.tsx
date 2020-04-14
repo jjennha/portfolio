@@ -49,7 +49,7 @@ export default class Info extends Component<Props, State>{
     render() {
         return (
             <Container fluid={true} className="info-container">
-                <h2 className="header">About</h2>
+                <h2 className="header header-main">About</h2>
                 <Row>
                     <Col xl={true} className="info-panel info-about">
                         <div className="about-section info-current">
