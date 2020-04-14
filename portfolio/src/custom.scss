@@ -2,6 +2,7 @@
 $body-bg: #000;
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Montserrat|Playfair+Display|Questrial');
 
 .container-fluid {
     margin: 0; padding: 0;
