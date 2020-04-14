@@ -21,6 +21,9 @@ h1,h2,h3 {
   font-size: 25px;
   color: white;
 }
+.header, .sub-header {
+  text-transform: uppercase;
+}
 .cover-container, .info-container, .projects-container {
   min-height: 100vh;
   max-height: fit-content;

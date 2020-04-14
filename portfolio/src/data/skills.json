@@ -1,23 +1,24 @@
 {
     "frontend": [
-        {"name":"HTML / CSS","level":5}, 
         {"name":"JavaScript","level":5}, 
+        {"name":"HTML / CSS","level":5}, 
         {"name":"React","level":4}, 
         {"name":"React Native","level":4}, 
         {"name":"TypeScript","level":3}, 
         {"name":"VueJS","level":3}
     ],
     "backend": [
-        {"name":"ASP.NET","level":4}, 
+        {"name":"Java","level":5},  
         {"name":"C#","level":5}, 
+        {"name":"ASP.NET","level":4},
         {"name":"GraphQL","level":4}, 
-        {"name":"Java","level":5}, 
         {"name":"SQL","level":4}, 
         {"name":"NodeJS","level":4}
     ],
     "misc": [
-        {"name":"AWS","level":4}, 
+        {"name":"Amazon Web Services","level":4}, 
         {"name":"Android","level":4}, 
-        {"name":"Expo","level":4}
+        {"name":"Expo","level":4},
+        {"name":"Google Cloud","level":3}
     ]
 }

@@ -4,12 +4,15 @@ import './App.css';
 import Cover from './components/Cover';
 import Info from './components/Info';
 import Container from 'react-bootstrap/Container';
+import Projects from './components/Projects';
+
 class App extends Component {
   render() {
     return (
       <Container fluid={true} className="App">
         <Cover/>
         <Info/>
+        <Projects/>
       </Container>
     );
   }
