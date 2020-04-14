@@ -51,7 +51,7 @@ export default class Info extends Component<Props, State>{
             <Container fluid={true} className="info-container">
                 <h2 className="header">About</h2>
                 <Row>
-                    <Col md={true} className="info-panel info-about">
+                    <Col xl={true} className="info-panel info-about">
                         <div className="about-section info-current">
                             <h3 className="sub-header">Recent</h3>
                             <div>
@@ -92,20 +92,23 @@ export default class Info extends Component<Props, State>{
                             </Row>
                         </div>
                         <div className="about-section info-more">
-                            <h3 className="sub-header">Links</h3>
+                            <h3 className="sub-header">Contact</h3>
+                            <p>Let's connect!</p>
                             <ul className="links-container">
-                                <li className="panel"><Button variant="outline-light" href="https://www.linkedin.com/in/jjennha">LinkedIn</Button>{' '}</li>
-                                <li className="panel"><Button variant="outline-light" href="https://twitter.com/jjennha">Twitter</Button>{' '}</li>
-                                <li className="panel"><Button variant="outline-light" href="https://github.com/jjennha">GitHub</Button>{' '}</li>
-                                <li className="panel"><Button variant="outline-light" href="http://jennha.com/Resume1.pdf" title="Resume">Resume</Button>{' '}</li>
+                                <li className="panel"><Button variant="outline-light" onClick={() => window.open("https://www.linkedin.com/in/jjennha", "_blank")}>LinkedIn</Button>{' '}</li>
+                                <li className="panel"><Button variant="outline-light" onClick={() => window.open("https://twitter.com/jjennha", "_blank")}>Twitter</Button>{' '}</li>
+                                <li className="panel"><Button variant="outline-light" onClick={() => window.open("https://github.com/jjennha", "_blank")}>GitHub</Button>{' '}</li>
+                                <li className="panel"><Button variant="outline-light" onClick={() => window.open("http://jennha.com/Resume1.pdf", "_blank")} title="Resume">Resume</Button>{' '}</li>
                             </ul>
                         </div>
                     </Col>
-                    <Col md={true} className="info-panel info-timeline">
+                    <Col xl={true} className="info-panel info-timeline">
 
                         <div id="timeline">
-                            <h3 className="header">Updates</h3>
-                            <p>Some exciting professional and personal milestones on my timeline.</p>
+                            <div className="timeline-header">
+                                <h3 className="header">Updates</h3>
+                                <p>Some exciting professional and personal milestones on my timeline.</p>
+                            </div>
                             <ul id="drop">
                                 {this.state.updates.map((u, i) => {
                                     return (
@@ -113,7 +116,7 @@ export default class Info extends Component<Props, State>{
                                             <div className="date">{u.date}</div>
                                             <div className="event-desc">
                                                 <div className="title">{u.event}</div>
-                                                <div className="details" dangerouslySetInnerHTML={{ __html: u.details }}/>
+                                                <div className="details" dangerouslySetInnerHTML={{ __html: u.details }} />
                                             </div>
                                         </li>
                                     )

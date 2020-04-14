@@ -1,9 +1,8 @@
  .projects-container {
     font-family: 'Source Code Pro', monospace;
-    padding: 5%; 
+    padding: 3% 5%;
 }
  .projects-container .row {
-    /* display: flex; */
     align-items: center;
     background: #2f3946a3;
     margin: 1em 0em;
@@ -36,7 +35,6 @@
 .project-img {
     display: flex;
     align-items: center;
-    /* height: 17em;         */
     max-width: 400px;
     margin: 0 auto;
 }

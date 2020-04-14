@@ -1,9 +1,12 @@
 .info-container {
-    background: linear-gradient(to bottom, #2b2f42 63%, #020204 95%);
+    background: linear-gradient(to bottom, #2c333e 63%, #020204 95%);
     color: white;
     font-family: 'Source Code Pro', monospace;
     font-size: 1em;
-    padding: 2em;
+    padding: 3% 5%;
+}
+.timeline-header {
+    padding:1rem;
 }
 .header {
     text-align: center;
@@ -12,14 +15,16 @@
 .info-panel {
     /* height: fit-content; */
     font-size: .8em;
+    border-radius: .3rem;
 }
 .info-about {
     text-align: left;
 }
 .about-section {
-    background: #1f2335a1;
-    padding: .5em 1em;
+    background: #232830;
+    padding: 1em 1.2em;
     margin: 1em 0;
+    border-radius: .3rem;
 }
 .info-about h3 {
     border-bottom:2px solid white;
@@ -55,7 +60,7 @@
     border:1.7px solid #74a09c
 }
 .info-timeline {
-    background: #1f2335a1;
+    background: #232830;
     padding: .5em 0;
     margin: 1em;
 }

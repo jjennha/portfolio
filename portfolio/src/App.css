@@ -24,12 +24,13 @@ h1,h2,h3 {
 .header, .sub-header {
   text-transform: uppercase;
 }
-.cover-container, .info-container, .projects-container {
+.cover-container {
   min-height: 100vh;
   max-height: fit-content;
-  
 }
-
+.info-container, .projects-container {
+  max-height: fit-content;
+}
 .App {
   text-align: center;
 }
