@@ -1,11 +1,12 @@
  .projects-container {
     font-family: 'Source Code Pro', monospace;
- }
+    padding: 5%; 
+}
  .projects-container .row {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     background: #2f3946a3;
-    margin: 1em 5em;
+    margin: 1em 0em;
     padding: 1em;
     text-align: left;
 }
@@ -35,7 +36,9 @@
 .project-img {
     display: flex;
     align-items: center;
-    height: 17em;        
+    /* height: 17em;         */
+    max-width: 400px;
+    margin: 0 auto;
 }
 .img {
     max-width: 100%;

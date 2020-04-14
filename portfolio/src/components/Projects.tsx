@@ -42,7 +42,6 @@ export default class Projects extends Component<Props, State>{
                 {
                     this.state.projects.map((p, i) => {
                         return (
-                            // <div className="panel">
                             <Row key={i}>
                                 <Col md={5} className="project-img">
                                     <img className="img" src={p.img} />
