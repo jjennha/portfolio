@@ -5,6 +5,12 @@
     font-size: 1em;
     padding: 3% 5%;
 }
+.info-row {
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
 .timeline-header {
     padding:1rem;
 }
@@ -32,7 +38,7 @@
     border-bottom:2px solid white;
 }
 .skills {
-    margin:0
+    margin:0;
 }
 .skill-list {
     display: inline-block;
@@ -122,6 +128,7 @@
     list-style-type: none;
     padding: 0;
     margin:0 auto;
+    width: 100%;
 }
 .links-container li {
     margin:0 auto;

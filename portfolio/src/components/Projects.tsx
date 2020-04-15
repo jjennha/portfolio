@@ -1,46 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import projects from '../data/projects.json';
+
+import projectsData from '../data/projects.json';
 
 
-type Props = {
-
-}
-type State = {
-    projects: {
-        name: string,
+type Project = {
+    name: string,
         stack: string[],
         headline: string,
         description: string,
         img: string,
         source: string,
         demo: string
-    }[]
-}
-export default class Projects extends Component<Props, State>{
-    constructor(props: Props) {
-        super(props);
-    }
-    componentWillMount() {
-        this.setState({
-            projects: []
-        });
-    }
-    componentDidMount() {
-        console.log(projects);
-        this.setState({
-            projects: projects
-        });
-    }
-    render() {
-        return (
-            <Container fluid={true} className="projects-container">
+};
+
+const projects: Project[] = projectsData;
+
+export default function Projects() {
+    return (
+        <Container fluid={true} className="projects-container">
                 <h2 className="header header-main">Projects</h2>
                 {
-                    this.state.projects.map((p, i) => {
+                    projects.map((p, i) => {
                         return (
                             <Row key={i}>
                                 <Col md={5} className="project-img">
@@ -66,6 +50,5 @@ export default class Projects extends Component<Props, State>{
                 })
                 }
             </Container>
-        )
-    }
+    )
 }

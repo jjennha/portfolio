@@ -1,21 +1,18 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Container from 'react-bootstrap/Container';
+
 import Cover from './components/Cover';
 import Info from './components/Info';
-import Container from 'react-bootstrap/Container';
 import Projects from './components/Projects';
 
-class App extends Component {
-  render() {
+export default function App() {
     return (
       <Container fluid={true} className="App">
         <Cover/>
         <Info/>
         <Projects/>
       </Container>
-    );
-  }
+    )
 }
 
-export default App;
