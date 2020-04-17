@@ -126,3 +126,10 @@
     max-height: 300px;
     transition: visibility 0s, opacity .5s, max-height 0.8s linear;
 }
+
+@media only screen and (max-width: 600px) {
+    #timeline li .date {
+        min-width: 6em;
+        padding-right: 1em;
+    }
+}
