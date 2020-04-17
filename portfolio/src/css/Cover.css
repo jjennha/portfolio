@@ -28,14 +28,14 @@
     background: black;
     color: white;
     left: -1em;
-    animation: slide-in2 2s infinite;
+    animation: slide-in1 2s;
 }
 .text-me {
     background: white;
     color: black;
     bottom: .2em;
     left: 1em;
-    animation: slide-in2 2s infinite; 
+    animation: slide-in2 2s; 
 }
 .profile {
     height: 15em;
