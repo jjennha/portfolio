@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import InterestSkills from './InterestSkills';
-import Contact from './Contact';
+import Interests from './Interests';
+import Skills from './Skills';
 import Recent from './Recent';
 import Timeline from './Timeline';
 
@@ -15,8 +15,8 @@ export default function info() {
             <Row className="info-row">
                 <Col xl={true} className="info-panel info-about">
                     <Recent />
-                    <InterestSkills />
-                    <Contact />
+                    <Interests />
+                    <Skills/>
                 </Col>
                 <Col xl={true} className="info-panel info-timeline">
                     <Timeline />

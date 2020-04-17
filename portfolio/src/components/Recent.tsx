@@ -7,7 +7,7 @@ export default function Recent() {
             <div>
                 <p>
                     I recently graduated from Iowa State University and completed my Bachelor's Degree with a major in Computer Science and a minor in French (2016 - 2019).
-                    What am I up to next? I will be heading to Seattle, Washington for my next role as a Software Engineer at Amazon!
+                    <br/><br/>What am I up to next? I will be heading to Seattle, Washington for my next role as a Software Engineer at Amazon!
                                 </p>
             </div>
         </div>

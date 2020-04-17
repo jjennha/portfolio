@@ -16,9 +16,9 @@
         {"name":"NodeJS","level":4}
     ],
     "misc": [
-        {"name":"Amazon Web Services","level":4}, 
+        {"name":"AWS","level":4}, 
         {"name":"Android","level":4}, 
         {"name":"Expo","level":4},
-        {"name":"Google Cloud","level":3}
+        {"name":"GCP","level":3}
     ]
 }

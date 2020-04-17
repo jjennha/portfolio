@@ -14,7 +14,18 @@ const SkillColor: { [id: string]: string } = {
     "backend": "#76a3e4",
     "misc": "#74a09c"
 }
-const Skills = (props: { skillType: string, skillsList: Skill[] }) => {
+
+
+const getLevelStyles = (level: number, color: string) => {
+    const styles = {
+        width: (100 * level / 5) + "%",
+        background: color,
+        overflow: 'hidden'
+    }
+    return styles;
+}
+
+const SkillType = (props: { skillType: string, skillsList: Skill[] }) => {
     var color = SkillColor[props.skillType];
     return (
         <Col className="skill-list">
@@ -27,27 +38,15 @@ const Skills = (props: { skillType: string, skillsList: Skill[] }) => {
     )
 }
 
-const getLevelStyles = (level: number, color: string) => {
-    const styles = {
-        width: (100 * level / 5) + "%",
-        background: color,
-        overflow: 'hidden'
-    }
-    return styles;
-}
-
-export default function InterestSkills() {
+export default function Skills() {
     return (
         <div className="about-section info-dev">
-            <h3 className="sub-header">Interests & Skills</h3>
-            <p>
-                I have primarily held roles in web application and mobile development with focuses in frontend development and cloud computing.
-                My current favorite stack is React with an AWS Backend.
-                            </p>
+            <h3 className="sub-header">Skills</h3>
+            <p>I've worked with a lot of different stacks the past few years.  Here's a comprehensive list of what I'm most familiar with but am not limited to.</p>
             <Row className="skills">
-                <Skills skillType="frontend" skillsList={frontend} />
-                <Skills skillType="backend" skillsList={backend} />
-                <Skills skillType="misc" skillsList={misc} />
+                <SkillType skillType="frontend" skillsList={frontend} />
+                <SkillType skillType="backend" skillsList={backend} />
+                <SkillType skillType="misc" skillsList={misc} />
             </Row>
         </div>
     )

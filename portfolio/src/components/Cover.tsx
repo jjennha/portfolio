@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import Contact from './Contact';
 
 
 const getProfile = () => {
@@ -23,6 +24,7 @@ export default function Cover(){
                         <h1 className="text-intro">Hello World</h1>
                         <h1 className="text-me">I'm Jenny</h1>
                     </div>
+                    <Contact/>
                 </div>
             </Container>
     )
