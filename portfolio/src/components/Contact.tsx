@@ -18,20 +18,6 @@ export default function Contact() {
             </div>
     )
 }
-function foo(){
-return (
-    <div className="about-section info-more">
-            <div className="links-container">
-                {
-                    contacts.map((c) => {
-                        return (
-                            <Button variant="outline-light" onClick={() => window.open(c.link, "_blank")}>{c.name}</Button>
-                        )
-                    })
-                }
-            </div>
-        </div>
-)
-}
+
 
         
