@@ -23,8 +23,9 @@ export default function Cover(){
                     <div className="cover-text">
                         <h1 className="text-intro">Hello World</h1>
                         <h1 className="text-me">I'm Jenny</h1>
+                        <Contact/>
                     </div>
-                    <Contact/>
+                    
                 </div>
             </Container>
     )

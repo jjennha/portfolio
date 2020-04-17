@@ -64,7 +64,7 @@
     border: none;
     min-width: 5.8em;
     background: #000000ad;
-    
+    margin: .2em !important;
 }
 
 .links-container {
