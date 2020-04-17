@@ -40,7 +40,7 @@ const SkillType = (props: { skillType: string, skillsList: Skill[] }) => {
 
 export default function Skills() {
     return (
-        <div className="about-section info-dev">
+        <div className="about-section">
             <h3 className="sub-header">Skills</h3>
             <p>I've worked with a lot of different stacks the past few years.  Here's a comprehensive list of what I'm most familiar with but am not limited to.</p>
             <Row className="skills">

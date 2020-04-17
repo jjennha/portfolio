@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Recent() {
     return (
-        <div className="about-section info-current">
+        <div className="about-section">
             <h3 className="sub-header">Recent</h3>
             <div>
                 <p>

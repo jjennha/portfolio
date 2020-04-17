@@ -1,0 +1,28 @@
+.skills {
+    margin: 0 auto;
+}
+.skill-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.skill-list li{
+    border-radius: 1rem;
+    color: white;
+    font-size: .8em;
+    margin: 0 0 1em 1em;
+    min-width: 150px !important;
+    overflow: hidden;
+}
+.level-style {
+    padding-left:.5em
+}
+.frontend {
+    border:1.7px solid #bd7878;
+}
+.backend {
+    border:1.7px solid #76a3e4;
+}
+.misc {
+    border:1.7px solid #74a09c
+}

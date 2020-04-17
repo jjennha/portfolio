@@ -1,0 +1,61 @@
+#timeline {
+    padding:0;
+    margin:0;
+}
+#drop {
+    margin-right: 1em;
+    max-height: 42em;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    overflow-y: scroll;
+    padding-left: 0;
+    text-align: left;
+}
+#timeline li {
+    display: flex;
+    justify-content: flex-start;
+}
+#timeline li .event-desc {
+    display: flex;
+    flex-direction: column;
+}
+#timeline li .event-desc .details {
+    max-height: 0;
+    opacity: 0;
+    transition: visibility 0s, opacity .7s, max-height 0.8s linear;
+    visibility: hidden;
+}
+#timeline .details:before {
+    content: '';
+}
+#timeline .details a {
+    color: #dbad57;
+}
+#timeline ul li {
+    margin: 2em 0;
+    padding: 0 5%;
+}
+#timeline li .date {
+    color: #ffc5af;
+    font-weight: 300;
+    min-width: 12em;
+}
+#timeline li:hover {
+    background: rgba(0,0,0,.2);
+    min-width: fit-content;
+    transition: visibility 0s, max-height 0.1s linear;
+    visibility: visible;
+}
+#timeline li:hover .details {
+    max-height: 300px;
+    opacity: 1;
+    transition: visibility 0s, opacity .5s, max-height 0.8s linear;
+    visibility: visible;
+}
+
+@media only screen and (max-width: 600px) {
+    #timeline li .date {
+        min-width: 6em;
+        padding-right: 1em;
+    }
+}

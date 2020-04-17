@@ -1,13 +1,11 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Contact from './Contact';
-
+import profile from '../images/profile.png';
 
 const getProfile = () => {
     const backgroundStyles = {
-        backgroundImage: `url(${
-            "https://i.imgur.com/K2zj5sk.png"
-            })`,
+        backgroundImage: `url(${profile})`,
         backgroundSize: '15rem'
     }
     return backgroundStyles;

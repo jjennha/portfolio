@@ -1,0 +1,30 @@
+.connect-btn {
+    background: #000000ad;
+    border-radius: 2em;
+    border: none;
+    min-width: 7em;
+}
+
+.links-container {
+    animation: slide-in1 2s;
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 1.5em;
+}
+
+.links-container .btn {
+    margin: 0 auto;
+}
+
+.links-container li > a{
+    min-width: 10em;
+}
+
+@media only screen and (max-width: 600px) {
+    .connect-btn {
+        max-width: 3em;
+        font-size: .8em;
+    }
+  }
