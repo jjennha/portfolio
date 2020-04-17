@@ -28,14 +28,14 @@
     background: black;
     color: white;
     left: -1em;
-    animation: slide-in3 2s;
+    animation: slide-in2 2s infinite;
 }
 .text-me {
     background: white;
     color: black;
     bottom: .2em;
     left: 1em;
-    animation: slide-in3 2s; 
+    animation: slide-in2 2s infinite; 
 }
 .profile {
     height: 15em;
@@ -55,7 +55,7 @@
     0% {left:5em;white-space: nowrap;}
 }
 @keyframes slide-in3 {
-    100%  { margin: 0r auto;}
+    100%  { margin: 0 auto;}
     0% { margin-left:7rem;}
 }
 
