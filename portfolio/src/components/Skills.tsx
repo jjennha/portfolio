@@ -10,9 +10,9 @@ const backend: Skill[] = skills.backend;
 const misc: Skill[] = skills.misc;
 
 const SkillColor: { [id: string]: string } = {
-    "frontend": "#fd9485",
+    "frontend": "#bd7878",
     "backend": "#52b3ff",
-    "misc": "#46cebb"
+    "misc": "#74a09c"
 }
 
 
