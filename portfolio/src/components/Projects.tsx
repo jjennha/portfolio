@@ -27,10 +27,10 @@ export default function Projects() {
                     projects.map((p, i) => {
                         return (
                             <Row key={i}>
-                                <Col md={5} className="project-img">
+                                <Col md={4} className="project-img">
                                     <img className="img" src={p.img} />
                                 </Col>
-                                <Col md={7} className="project-content">
+                                <Col md={8} className="project-content">
                                     <h1 className="name">{p.name}</h1>
                                     <h3 className="headline">{p.headline}</h3>
                                     <h3 className="stack">

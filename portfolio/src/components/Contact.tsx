@@ -15,6 +15,7 @@ export default function Contact() {
                         )
                     })
                 }
+                <Button className="connect-btn" variant="outline-light" onClick={() => window.open('../JennyHaResume.pdf', "_blank")}>Resume</Button>
             </div>
     )
 }
